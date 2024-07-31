@@ -1,1 +1,1 @@
-console.log("Hello Worl")
+const Monkey = "monkey"
