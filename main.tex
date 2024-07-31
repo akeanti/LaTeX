@@ -1,0 +1,42 @@
+\documentclass[border=10pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usetikzlibrary{decorations.text} % Allows us to wrap text around a circle
+
+\begin{document}
+\begin{tikzpicture}
+
+  \node[]at (0,1){\includegraphics[scale=.3]{femboy.png}};
+  \draw [double distance=2cm,color=pink,
+  line width=2pt,
+  postaction={
+    decorate,
+    decoration={
+      raise=-1.4ex,
+      text along path,
+      text align={center},
+      text={|\Huge\bfseries\sffamily|  Femboy's Approved}
+    },
+  },
+  ] (-90:30mm) arc (270:-90:4cm);
+  \path [
+    decorate,
+    decoration={
+      raise=-1.4ex,
+      text along path,
+      text align={center},
+      text={|\Huge\bfseries\sffamily| LaTeX}
+    },
+  ] (180:4cm) arc (183:273:3cm) ;
+  \path [
+    decorate,
+    decoration={
+      raise=-1.4ex,
+      text along path,
+      text align={center},
+      text={|\Huge\bfseries\sffamily|31/7/2024}
+    },
+  ] (270:3cm) arc (270:360:4cm) ;
+  
+\end{tikzpicture}
+\end{document}
